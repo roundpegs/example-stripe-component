@@ -1,1 +1,0 @@
-import './web-icons.css'

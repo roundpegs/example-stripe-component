@@ -1,0 +1,15 @@
+{
+  "displayName": "Simple Component",
+  "icon": "./icon.png",
+  "defaultWidth": 343,
+  "defaultHeight": 113,
+  "component": "./RPSimpleComponent.js",
+  "settingsURL": "https://eng1rwqs75ke4.x.pipedream.net/{{appId}}",
+  "props": [
+    {
+      "name": "testText",
+      "displayName": "Test text",
+      "type": "text"
+    }
+  ]
+}

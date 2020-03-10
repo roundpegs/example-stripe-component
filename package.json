@@ -1,26 +1,22 @@
 {
-  "name": "@adalo/example-stripe-component",
+  "name": "@roundpegs/example-simple-component",
   "version": "0.0.1",
-  "description": "Stripe Component for Adalo",
+  "description": "Simple component for Adalo",
   "main": "index.js",
   "scripts": {
     "build": "adalo build",
-    "lint": "eslint src --ext .js",
-    "prettier": "prettier --write *.js src/*.js \"src/**/*.js\"",
-    "publish": "S3_BUCKET=proton-libraries proton publish",
-    "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook",
+    "publish": "S3_BUCKET=proton-libraries adalo publish",
     "start": "adalo dev",
     "adalo-login": "adalo login"
   },
-  "author": "Jeremy Blalock",
+  "author": "Luis Rudge",
   "license": "MIT",
   "adalo": {
-    "displayName": "Example Stripe Component",
+    "displayName": "Simple Component",
     "components": [
       {
-        "name": "Stripe",
-        "manifest": "./src/Stripe/StripeManifest.json"
+        "name": "RPSimpleComponent",
+        "manifest": "./src/RPSimpleComponent/RPSimpleComponentManifest.json"
       }
     ]
   },
@@ -29,49 +25,9 @@
     "react-dom": ">=16"
   },
   "devDependencies": {
-    "@babel/core": "^7.1.2",
-    "@babel/plugin-proposal-class-properties": "^7.1.0",
-    "@babel/preset-env": "^7.1.0",
-    "@babel/preset-react": "^7.0.0",
     "@adalo/cli": "^0.0.27",
-    "@storybook/addon-actions": "^4.0.2",
-    "@storybook/addon-links": "^4.0.2",
-    "@storybook/addons": "^4.0.2",
-    "@storybook/react": "^4.0.2",
-    "babel-core": "^6.26.3",
-    "babel-loader": "^8.0.4",
-    "babel-runtime": "^6.26.0",
-    "css-loader": "^1.0.0",
-    "eslint": "^5.16.0",
-    "eslint-config-airbnb": "^17.1.1",
-    "eslint-config-prettier": "^6.0.0",
-    "eslint-plugin-import": "^2.18.0",
-    "eslint-plugin-jsx-a11y": "^6.2.3",
-    "eslint-plugin-prettier": "^3.1.0",
-    "eslint-plugin-react": "^7.14.3",
-    "eslint-plugin-react-hooks": "^1.7.0",
-    "prettier": "^1.18.2",
-    "react": "^16.5.2",
-    "react-art": "^16.6.0",
-    "react-dom": "^16.5.2",
-    "react-native-web": "^0.9.5",
-    "regenerator-runtime": "^0.12.1",
-    "style-loader": "^0.23.1"
+    "react": "^16.13.0",
+    "react-dom": "^16.13.0"
   },
-  "dependencies": {
-    "axios": "^0.18.1",
-    "babel-eslint": "^10.0.3",
-    "color": "^3.1.0",
-    "moment": "^2.24.0",
-    "qs": "^6.6.0",
-    "react-native-credit-card": "^0.1.9",
-    "react-native-credit-card-input": "^0.4.1",
-    "react-native-hyperlink": "^0.0.14",
-    "react-native-hyperlinked-text": "^1.0.1",
-    "react-native-inappbrowser-reborn": "^3.1.0",
-    "react-native-svg": "^9.3.3",
-    "react-native-svg-uri": "^1.2.3",
-    "socket.io-client": "2.1.1",
-    "react-native-vector-icons": "*"
-  }
+  "dependencies": {}
 }
