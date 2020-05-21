@@ -29,5 +29,8 @@
     "react": "^16.13.0",
     "react-dom": "^16.13.0"
   },
-  "dependencies": {}
+  "dependencies": {
+    "getstream": "^4.5.1",
+    "react-native-activity-feed": "^0.9.1"
+  }
 }

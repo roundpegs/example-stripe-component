@@ -1,9 +1,12 @@
 import React from 'react';
+import { StreamApp, FlatFeed } from 'react-native-activity-feed';
 
-import { View, Text } from 'react-native';
-
-export default ({ testText }) => (
-  <View>
-    <Text>{testText}</Text>
-  </View>
+export default () => (
+  <StreamApp
+    apiKey="57cgjs74mszu"
+    appId="80076"
+    token="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoibHVpc3J1ZGdlIn0.OkrkRWs2HqFY5R7xBxGP9HXdkPtFnyO2Ur1abnN2XNc"
+  >
+    <FlatFeed />
+  </StreamApp>
 );
